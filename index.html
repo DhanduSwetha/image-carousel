@@ -18,8 +18,8 @@
             background-color: #f0f0f0;
         }
         .swiper-container {
-            width: 50%;
-            height: 50%;
+            width: 100%;
+            height: 100%;
         }
         .swiper-slide {
             display: flex;
@@ -28,8 +28,8 @@
             background: #fff;
         }
         .swiper-slide img {
-            width: 80%;
-            height: auto;
+            width: 100%;
+            height: 100%;
             object-fit: cover;
         }
     </style>
@@ -46,10 +46,10 @@
             <div class="swiper-slide"><img src="images/image7.jpeg" alt="Image 7"></div>
         </div>
         <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
+         <div class="swiper-pagination"></div>
         <!-- Add Navigation -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <!-- <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div> -->
     </div>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -68,7 +68,9 @@
             autoplay: {
                 delay: 2000, // Time in milliseconds (2000ms = 2 seconds)
                 disableOnInteraction: false, // Keep autoplay running after user interactions
-            }, 
+            },
+            preloadImages: true, // Preload images for smooth transitions
+            updateOnImagesReady: true, // Update Swiper when images are ready
         });
     </script>
 </body>
