@@ -64,7 +64,11 @@
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
-            slidesPerView: 1, // Show only one slide at a time
+            slidesPerView: 1,// Show only one slide at a time
+            autoplay: {
+                delay: 2000, // Time in milliseconds (2000ms = 2 seconds)
+                disableOnInteraction: false, // Keep autoplay running after user interactions
+            }, 
         });
     </script>
 </body>
